@@ -1,6 +1,6 @@
 {
   "name": "harga-emas-scraper",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Harga Emas Scraper",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "keywords": ["Harga Emas", "Gold Price", "Harga Emas Scraper"],
   "author": "FauzieEste",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "axios": "^1.6.7"

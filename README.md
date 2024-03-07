@@ -15,41 +15,37 @@ npm i harga-emas-scraper
 ```javascript
 const hargaemas = require('harga-emas-scraper');
 
-async function Start() {
+const Start = async () => {
   try {
     const data = await hargaemas();
     console.log(data);
   } catch (error) {
     console.error("Error occurred:", error.message);
   }
-}
+};
 
 Start();
 
 ```
 ## Example Output
 ```javascript
-{
-  "DevInfo": {
-    "Developer": "Fauzie Este",
-    "Tools": "Harga Emas Scraper",
-    "Information": "Data Diambil dari : https://harga-emas.org/1-gram/"
+Data Emas: {
+  DevInfo: {
+    Developer: 'Fauzie Este',
+    Tools: 'Harga Emas Scraper',
+    Information: 'Data Diambil dari : https://harga-emas.org/1-gram/'
   },
-  "DataEmas": {
-    "IDRData": {
-      "IDR": "1.084.742,57 ↑ ",
-      "Persentase1": "+4.354,10",
-      "Persentase2": "+0,40%"
+  DataEmas: {
+    USDData: { USD: '69,32 ↑ ', Persentase1: '+0,29', Persentase2: '+0,42%' },
+    IDRData: {
+      IDR: '1.084.479,03 ↑ ',
+      Persentase1: '+4.090,56',
+      Persentase2: '+0,38%'
     },
-    "USDData": {
-      "USD": "69,26 ↑ ",
-      "Persentase1": "+0,23",
-      "Persentase2": "+0,33%"
-    },
-    "KURSData": {
-      "KURS": "15.660,85 ↑ ",
-      "Persentase1": "+9,10",
-      "Persentase2": "+0,06%"
+    KURSData: {
+      KURS: '15.644,70 ↓ ',
+      Persentase1: '-7,05',
+      Persentase2: '-0,05%'
     }
   }
 }
